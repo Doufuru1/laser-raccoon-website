@@ -262,6 +262,29 @@ body {
   margin-bottom: 3rem;
 }
 
+/* four.meme logo 图标 */
+.four-logo {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.25em;
+  margin-left: 0.1em;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+.section-title .four-logo {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.social-link .four-logo {
+  width: 1.3em;
+  height: 1.3em;
+}
+
 /* Grok 认证区 */
 .grok-proof {
   background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
