@@ -262,6 +262,86 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Grok 认证区 */
+.grok-proof {
+  background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  padding-top: 6rem;
+}
+
+.grok-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.1);
+}
+
+.grok-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grok-quote {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text);
+  border-left: 4px solid var(--neon-green);
+  padding-left: 1.2rem;
+}
+
+.grok-quote strong {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
+}
+
+.grok-source {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.grok-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.2);
+}
+
+.grok-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grok-image::after {
+  content: 'Grok 官方认证';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem;
+  background: rgba(0, 240, 255, 0.9);
+  color: #000;
+  font-weight: 900;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .grok-card {
+    grid-template-columns: 1fr;
+    padding: 1.2rem;
+  }
+  .grok-quote {
+    font-size: 1.05rem;
+  }
+}
+
 /* 关于 */
 .about {
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
