@@ -3,194 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>激光浣熊 | 首个中文股票 MEME</title>
-  <meta name="description" content="激光浣熊 — 首个中文股票 MEME。源自马斯克激光浣熊 Meme，瞄准股票市场，融合科技文化与中文 MEME 文化。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>网站升级中 | 激光浣熊</title>
+  <meta name="description" content="网站升级中，敬请期待。">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦝</text></svg>">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .logo {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #888888;
+      letter-spacing: 0.05em;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.05); }
+    }
+  </style>
 </head>
 <body>
-  <div class="scanlines"></div>
-  <div class="noise"></div>
-
-  <nav class="nav">
-    <div class="nav-logo">🦝 激光浣熊</div>
-    <div class="nav-links">
-      <a href="#about">关于</a>
-      <a href="#tokenomics">代币经济</a>
-      <a href="#roadmap">路线图</a>
-      <a href="#community">社区</a>
-    </div>
-    <button class="menu-toggle" aria-label="菜单">☰</button>
-  </nav>
-
-  <header class="hero" id="home">
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/poster.jpg">
-      <source src="assets/hero.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="badge">🚀 four.meme 首发</div>
-      <h1 class="glitch" data-text="激光浣熊">激光浣熊</h1>
-      <p class="tagline">首个中文股票 MEME · 两道激光 · 瞄准市场</p>
-      <div class="hero-buttons">
-        <a href="https://four.meme" target="_blank" rel="noopener" class="btn btn-primary">🚀 立即购买</a>
-        <a href="https://x.com/grok/status/2086003202747421085" target="_blank" rel="noopener" class="btn btn-secondary">查看 Grok 原帖</a>
-      </div>
-    </div>
-    <div class="scroll-hint">↓</div>
-  </header>
-
-  <section class="section grok-proof" id="grok">
-    <div class="container">
-      <h2 class="section-title">🤖 Grok 认证</h2>
-      <div class="grok-card">
-        <div class="grok-text">
-          <p class="grok-quote">"对，就是浣熊。这个激光眼怪兽叫 <strong>Razorcoon</strong>，中文昵称可以叫「剃刀浣熊」或「激光浣熊」。</p>
-          <p class="grok-source">— Grok 在 Elon Musk 激光浣熊帖子下的回复</p>
-          <a href="https://x.com/grok/status/2086003202747421085" target="_blank" rel="noopener" class="btn btn-secondary">去 X 看原帖</a>
-        </div>
-        <div class="grok-image">
-          <img src="assets/grok-reply.jpg" alt="Grok 回复：这个激光眼怪兽叫 Razorcoon，中文昵称可以叫激光浣熊">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section about" id="about">
-    <div class="container">
-      <h2 class="section-title">🦝 什么来头？</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="card-icon">⚡</div>
-          <h3>马斯克激光 Meme</h3>
-          <p>源自 Elon Musk 在 X 发布的激光浣熊 Meme，自带病毒传播基因。</p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">📈</div>
-          <h3>股票文化符号</h3>
-          <p>一只浣熊，两道激光，把华尔街股票叙事与中文 MEME 文化融为一体。</p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">🇨🇳</div>
-          <h3>中文社区主场</h3>
-          <p>打造属于中文社区的激光浣熊文化符号，让 MEME 力量横扫市场。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section tokenomics" id="tokenomics">
-    <div class="container">
-      <h2 class="section-title">💰 代币经济</h2>
-      <div class="token-grid">
-        <div class="token-card">
-          <span class="token-label">总量</span>
-          <span class="token-value">1,000,000,000</span>
-          <span class="token-unit">总供应量</span>
-        </div>
-        <div class="token-card">
-          <span class="token-label">公平发射</span>
-          <span class="token-value">100%</span>
-          <span class="token-unit">LP 已锁定</span>
-        </div>
-        <div class="token-card">
-          <span class="token-label">税费</span>
-          <span class="token-value">2 / 2</span>
-          <span class="token-unit">买入 / 卖出</span>
-        </div>
-        <div class="token-card">
-          <span class="token-label">持币奖励</span>
-          <span class="token-value">&gt;100万</span>
-          <span class="token-unit">分红 $NVDAB</span>
-        </div>
-        <div class="token-card">
-          <span class="token-label">链</span>
-          <span class="token-value">BNB</span>
-          <span class="token-unit">Chain</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section chart-section">
-    <div class="container">
-      <h2 class="section-title">📉📈 激光只看涨</h2>
-      <div class="chart-box">
-        <canvas id="memeChart" width="800" height="300"></canvas>
-        <div class="chart-overlay">
-          <p>当激光点亮，空头无处可逃。</p>
-          <span class="laser-tag">TO THE MOON 🌕</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section roadmap" id="roadmap">
-    <div class="container">
-      <h2 class="section-title">🗺️ 路线图</h2>
-      <div class="timeline">
-        <div class="timeline-item done">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>阶段一 · 觉醒</h3>
-            <p>激光浣熊概念诞生，网站上线，社区启动。</p>
-          </div>
-        </div>
-        <div class="timeline-item active">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>阶段二 · 发射</h3>
-            <p>four.meme 公平发射，X / Telegram 病毒传播。</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>阶段三 · 占领</h3>
-            <p>上热搜、做二创、联合 KOL，让激光照亮币圈。</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>阶段四 · 月球</h3>
-            <p>激光浣熊成为中文股票 MEME 的代名词。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section buy" id="buy">
-    <div class="container">
-      <h2 class="section-title">🚀 去 <img src="assets/four-meme-logo.jpg" alt="four.meme" class="four-logo"> four.meme 购买</h2>
-      <a href="https://four.meme" target="_blank" rel="noopener" class="btn btn-big">🔥 去 <img src="assets/four-meme-logo.jpg" alt="four.meme" class="four-logo"> four.meme 买激光浣熊</a>
-    </div>
-  </section>
-
-  <section class="section community" id="community">
-    <div class="container">
-      <h2 class="section-title">🌐 加入社区</h2>
-      <p class="community-text">激光不等人，快来一起发射。</p>
-      <div class="socials">
-        <a href="https://x.com/Razorcoon_BNB" target="_blank" rel="noopener" class="social-link">𝕏 X / Twitter</a>
-        <a href="https://t.me/razorcoon_BNB" target="_blank" rel="noopener" class="social-link">✈️ Telegram</a>
-        <a href="https://four.meme" target="_blank" rel="noopener" class="social-link"><img src="assets/four-meme-logo.jpg" alt="four.meme" class="four-logo"> four.meme</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>🦝 激光浣熊</p>
-      <p class="disclaimer">免责声明：本项目为 MEME 文化实验，不构成任何投资建议。加密货币波动极大，请自行承担风险。</p>
-      <p class="copyright">© 2026 激光浣熊社区</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <div class="container">
+    <div class="logo">🦝</div>
+    <h1 class="title">网站升级中</h1>
+    <p class="subtitle">Website Under Maintenance · 敬请期待</p>
+  </div>
 </body>
 </html>
