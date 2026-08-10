@@ -182,6 +182,67 @@ body {
   flex-wrap: wrap;
 }
 
+.ca-box {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--neon-cyan);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.ca-label {
+  font-size: 0.75rem;
+  color: var(--neon-cyan);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ca-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ca-address {
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.ca-copy {
+  background: transparent;
+  border: 1px solid var(--neon-green);
+  color: var(--neon-green);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.ca-copy:hover {
+  background: var(--neon-green);
+  color: #000;
+}
+
+.ca-hint {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
