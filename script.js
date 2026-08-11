@@ -1,30 +1,6 @@
 // 激光浣熊 交互脚本
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 复制合约地址
-  window.copyCA = function() {
-    const caEl = document.getElementById('caAddress');
-    const hint = document.getElementById('caHint');
-    if (!caEl) return;
-    const ca = caEl.textContent.trim();
-    navigator.clipboard.writeText(ca).then(() => {
-      if (hint) {
-        const original = hint.textContent;
-        hint.textContent = '已复制 ✓';
-        hint.style.color = 'var(--neon-green)';
-        setTimeout(() => {
-          hint.textContent = original;
-          hint.style.color = '';
-        }, 2000);
-      }
-    }).catch(() => {
-      if (hint) {
-        hint.textContent = '复制失败，请手动复制';
-        hint.style.color = 'var(--neon-pink)';
-      }
-    });
-  };
-
   // 移动菜单
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
